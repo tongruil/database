@@ -35,7 +35,7 @@ class input_new : AppCompatActivity() {
         btnOK.setOnClickListener {
             val newLesson = Lesson(etName.text.toString(),etStartTime.text.toString(),
                 etEndTime.text.toString(), etTeacher.text.toString(),etRoomName.text.toString())
-            dao.insertNewLesson(newLesson)
+            dao?.insertNewLesson(newLesson)
             finish()
         }
 

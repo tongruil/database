@@ -2,7 +2,7 @@ package com.example.database_tongrui
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import org.intellij.lang.annotations.PrintFormat
+
 
 @Entity(tableName = "lessons")
 data class Lesson (

@@ -1,8 +1,6 @@
 package com.example.database_tongrui
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.Query
+import androidx.room.*
 
 @Dao
 interface LessonDao {
@@ -17,4 +15,10 @@ interface LessonDao {
 
     @Query("DELETE FROM lessons")
     fun deleteAllLessons()
+
+    @Delete
+    fun deletLesson(lesson: Lesson?)
+
+    @Update
+    fun updateLesson(lesson: Lesson?)
 }
